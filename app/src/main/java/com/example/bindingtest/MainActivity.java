@@ -4,7 +4,6 @@ import android.databinding.DataBindingUtil;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-
 import com.example.bindingtest.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         ActivityMainBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
 
-        mUser = new User("Edwin", "Hernandez");
+        mUser = new User("Edwin", "Hernandez", "https://avatars1.githubusercontent.com/u/9983971?v=3&s=460");
 
         EventListener eventListener = new EventListener();
 
