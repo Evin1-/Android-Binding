@@ -12,4 +12,9 @@ public class EventListener {
     public void onClickFriend(View view) {
         Log.d(TAG, "onClickFriend: ");
     }
+
+    public void onClickEnemy(View view, User user) {
+        Log.d(TAG, "onClickEnemy: " + user.getFirstName());
+        Log.d(TAG, "onClickEnemy: " + user.getLastName());
+    }
 }
