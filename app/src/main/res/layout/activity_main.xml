@@ -5,6 +5,10 @@
     <data>
 
         <variable
+            name="events"
+            type="com.example.bindingtest.EventListener" />
+
+        <variable
             name="user"
             type="com.example.bindingtest.User" />
     </data>
@@ -28,5 +32,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@{user.lastName}" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="@{events::onClickFriend}" />
     </LinearLayout>
 </layout>
