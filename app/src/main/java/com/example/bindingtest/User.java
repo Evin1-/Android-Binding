@@ -6,10 +6,16 @@ package com.example.bindingtest;
 public class User {
     private String firstName;
     private String lastName;
+    private String emailAddress;
 
     public User(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
+    }
+
+    public User(String firstName, String lastName, String emailAddress) {
+        this(firstName, lastName);
+        this.emailAddress = emailAddress;
     }
 
     public String getFirstName() {
@@ -26,5 +32,13 @@ public class User {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    public String getEmailAddress() {
+        return emailAddress;
+    }
+
+    public void setEmailAddress(String emailAddress) {
+        this.emailAddress = emailAddress;
     }
 }
